@@ -1,9 +1,11 @@
 import { useState } from "react";
 import SidebarMenu from "./SidebarMenu";
 import '../../assets/control.png'
+import { getFullNameFromToken } from "../../services/utilities/tokenUtilities";
 
 function Sidebar() {
   const [open, setOpen] = useState(true);
+  const fullName = getFullNameFromToken();
 
   return (
     <div className="flex">
@@ -25,7 +27,7 @@ function Sidebar() {
               !open && "scale-0"
             }`}
           >
-            Username
+            {fullName ?? "Username"}
           </span>
         </div>
         <ul className="pt-6">

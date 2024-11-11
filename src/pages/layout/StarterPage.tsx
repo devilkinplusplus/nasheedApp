@@ -1,11 +1,11 @@
 import React from 'react'
-import Surah from '../surah/Surah'
+import Home from '../home/Home'
 
 function StarterPage() {
   return (
     //TODO: Dashboard
     <div>
-      <Surah />
+      <Home />
     </div>
   )
 }

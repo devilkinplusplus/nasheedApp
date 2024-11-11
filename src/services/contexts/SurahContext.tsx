@@ -2,9 +2,11 @@ import React, {
     createContext,
     useContext,
     useState,
+    useEffect,
     ReactNode,
   } from "react";
   import { DataResponse } from "../responseTypes/surahResponse";
+import { getAllSurahsAsync } from "../apis/surahService";
   
   // Define the context type
   interface SurahContextType {
@@ -20,6 +22,21 @@ import React, {
     children,
   }) => {
     const [surahList, setSurahList] = useState<DataResponse[]>([]);
+
+    useEffect(() => {
+      const fetchSurahs = async () => {
+        try {
+          const getAllSurahs = await getAllSurahsAsync();
+          setSurahList(getAllSurahs.data);
+        } catch (error) {
+          console.error("Error fetching surahs:", error);
+        } finally {
+        }
+      };
+  
+      fetchSurahs();
+    }, [setSurahList]);
+  
   
     return (
       <SurahContext.Provider
