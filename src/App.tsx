@@ -18,11 +18,13 @@ import { SurahProvider } from "./services/contexts/SurahContext";
 import OneItemDetails from "./components/hadiths/OneItemDetails";
 import HadithOption from './components/hadiths/HadithOption';
 import { ToastContainer } from "react-toastify";
+import { SunnahProvider } from "./services/contexts/SunnahContex";
 
 function App() {
   return (
     <AudioProvider>
       <SurahProvider>
+        <SunnahProvider>
         <Routes>
           <Route path="" element={<MainLayout />}>
             <Route index={true} element={<StarterPage />} />
@@ -43,6 +45,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ToastContainer />
+        </SunnahProvider>
       </SurahProvider>
     </AudioProvider>
   );
