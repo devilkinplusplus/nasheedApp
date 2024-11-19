@@ -2,7 +2,7 @@ import axios from "axios";
 import { PlaylistResponse, CreatePlaylistDto } from '../responseTypes/playlistResponse';
 
 const axiosInstance = axios.create({
-  baseURL: `https://localhost:7097/`,
+  baseURL: `https://nasheedapp-cbecgwc8hjhrctgu.canadacentral-01.azurewebsites.net/`,
 });
 
 axiosInstance.interceptors.request.use(

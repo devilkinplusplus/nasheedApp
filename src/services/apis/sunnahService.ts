@@ -4,7 +4,7 @@ import { DataResponse, SunnahResponse } from "../responseTypes/sunnahResponse";
 
 
 const axiosInstance = axios.create({
-  baseURL: `https://localhost:7097/api/Sunnahs`,
+  baseURL: `https://nasheedapp-cbecgwc8hjhrctgu.canadacentral-01.azurewebsites.net/api/Sunnahs`,
 });
 
 export const getAllSunnahsAsync = async () : Promise<DataResponse> => {

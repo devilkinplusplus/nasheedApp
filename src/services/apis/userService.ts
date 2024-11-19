@@ -3,7 +3,7 @@ import { UserResponse,CreateUserDto } from "../responseTypes/userResponse";
 
 
 const axiosInstance = axios.create({
-  baseURL: `https://localhost:7097/api/users/`,
+  baseURL: `https://nasheedapp-cbecgwc8hjhrctgu.canadacentral-01.azurewebsites.net/api/users/`,
 });
 
 

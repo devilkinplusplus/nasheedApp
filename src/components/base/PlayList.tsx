@@ -162,6 +162,9 @@ function PlayList() {
                 fullWidth
                 onChange={(e) => setTitle(e.target.value)}
                 InputLabelProps={{ style: { color: "white" } }}
+                InputProps={{
+                  style: { color: "white" }, // Changes the text color
+                }}
               />
               <Select
                 isMulti
