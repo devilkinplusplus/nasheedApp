@@ -53,7 +53,7 @@ function OneSurah({ val , audioSrc, index }) {
   };
 
   return (
-    <div onClick={() => navlink(`/surahs/${index}`)} className="h-[200px] sm:h-[300px] w-[115px] sm:w-[120px] md:w-[140px] lg:w-[160px] bg-[#15151580] rounded-lg p-2 md:p-4 hover:bg-[#282828] transition-all duration-300 group cursor-pointer">
+    <div onClick={() => navlink(`/surahs/${index}`)} className="h-[200px] sm:h-[300px] w-[115px] sm:w-[120px] md:w-[140px] lg:w-[160px] bg-[#15151580] rounded-lg p-2 md:p-4 my-4 overflow-hidden hover:bg-[#282828] transition-all duration-300 group cursor-pointer">
       <div className="mb-4 relative">
         <img
           src={require("../../assets/kedi.jpg")}
