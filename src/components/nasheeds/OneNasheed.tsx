@@ -62,7 +62,7 @@ function OneNasheed({ audioSrc, title ,index, isPlaylist,coverImg, playlistEleme
 
   return (
     <div className="h-[200px] sm:h-[300px] w-[115px] sm:w-[120px] md:w-[140px] lg:w-[160px] bg-[#15151580] rounded-lg p-2 md:p-4 my-2 hover:bg-[#282828] transition-all duration-300 group">
-      <div className="mb-4 relative w-[79px] h-auto">
+      <div className="mb-4 relative w-full h-[100px] md:h-[112px]">
         <img
           src={coverImg}
           alt="cat"
